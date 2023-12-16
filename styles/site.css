@@ -1,0 +1,309 @@
+:root {
+    --maindarkcolor: #000;
+    --mainlightcolor: #f00;
+    --accentdarkcolor: #8c8c8c;
+    --accentlightcolor: #fff700;
+    --lightcolor: #fff;
+}
+
+body {
+
+    inline-size: 100vi;
+    padding: 0vi;
+    margin: 0vi;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-color: var(--accentdarkcolor);
+}
+
+header {
+    background-color: #000000;
+    color: var(--lightcolor);
+    padding: 1vi;
+    background-image: url(../images/Banner.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header p{
+    border: 0;
+    color: var(--lightcolor);
+    text-align: right;
+    padding-right: 10px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3em;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 0.2vi solid var(--accentlightcolor);
+    border-radius: 5px;
+    padding: 0.4vi;
+    display: inline-block;
+    margin: 1vi;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    text-align: left;
+    font-size: 1.25em;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+header nav li {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: var(--lightcolor);
+    text-decoration: none;
+    padding: 1vi;
+    font-size: 1.25em;
+
+
+}
+
+#img1 {
+    width: 20vi;
+}
+
+#img2 {
+    width: 20vi;
+}
+
+p {
+    font-size: 1.25em;
+    border: 0.2vi solid var(--accentlightcolor);
+    padding: 10px;
+
+}
+
+/*Text in body betwwen header and footer */
+
+.text {
+    border: 0.2vi solid var(--accentlightcolor);
+    border-radius: 1vi;
+    font-size: 1.5em;
+
+    display: flex;
+    margin: 1vi;
+    padding: 1vi;
+    margin-bottom: 10vi;
+
+
+}
+
+.textwithlinks {
+
+
+    border: 0.2vi solid var(--accentlightcolor);
+    border-radius: 1vi;
+    font-size: 1.5em;
+    margin: 1vi;
+    padding: 1vi;
+    margin-bottom: 10vi;
+    text-align: left;
+
+}
+
+div p a {
+    color: var(--maindarkcolor);
+    font-style: italic;
+}
+
+.listlinks{
+   padding: 10px 5px 10px 5px;
+    text-align: left;
+    margin-top: 10px;
+    list-style-image: url(../images/listgokart.png);
+    vertical-align: middle;
+    
+}
+a{
+    color: var(--maindarkcolor);
+}
+
+
+footer {
+    background: var(--maindarkcolor);
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer p {
+    color: var(--lightcolor);
+    border-radius: 5px;
+    font-size: 0.75em;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--lightcolor);
+    font-size: 1em;
+}
+
+
+footer nav li {
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav li a {
+    color: var(--lightcolor);
+    text-decoration: none;
+    margin: 0;
+    padding: 1vi;
+}
+
+/* Table*/
+table {
+    margin: auto;
+    border: 3px solid var(--maindarkcolor);
+    width: 80%;
+    background-color: var(--maindarkcolor);
+}
+
+tr {
+    text-align: center;
+}
+
+td,
+th {
+    padding: 15px;
+    border: 1px solid var(--accentlightcolor);
+}
+
+tr:nth-of-type(even) {
+    background-color: var(--mainlightcolor);
+    color: var(--lightcolor);
+}
+
+tr:nth-of-type(odd) {
+    background-color: var(--maindarkcolor);
+    color: var(--lightcolor);
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/*End of table*/
+
+@media (min-width: 768px) {
+    header nav li {
+        display: inline;
+        padding-left: 1vi;
+    }
+
+    footer nav li {
+        display: inline;
+    }
+
+    #img1 {
+        float: right;
+
+    }
+
+    #img2 {
+        float: left;
+    }
+
+    h1 {
+        margin: 0.5vi;
+    }
+
+    h2 {
+        font-size: 5vi;
+        margin: 0.5vi;
+    }
+
+    li {
+        padding: 0;
+    }
+
+    p {
+        border: 0.3vi solid var(--accentlightcolor);
+        font-size: 1.25em;
+        border-radius: 5px;
+        color: var(--maindarkcolor)
+    }
+
+
+    header ul li {
+        padding: 0;
+    }
+
+    footer p {
+        border: 0;
+        color: var(--lightcolor);
+        border-radius: 5px;
+        font-size: 0.75em;
+    }
+
+    /* Table*/
+    table {
+        margin: auto;
+        border: 3px solid var(--maindarkcolor);
+        width: 80%;
+    }
+
+    tr {
+        text-align: center;
+    }
+
+    td,
+    th {
+        padding: 10px;
+        border: 1px solid var(--accentlightcolor);
+    }
+
+    tr:nth-of-type(even) {
+        background-color: var(--mainlightcolor);
+        color: var(--lightcolor);
+    }
+
+    tr:nth-of-type(odd) {
+        background-color: var(--maindarkcolor);
+        color: var(--lightcolor);
+    }
+
+    th {
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
+    }
+}

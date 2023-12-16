@@ -1,0 +1,100 @@
+:root {
+    --maindarkcolor: #000;
+    --mainlightcolor: #f00;
+    --accentdarkcolor: #8c8c8c;
+    --accentlightcolor: #fff700;
+    --lightcolor: #fff;
+}
+
+form {
+    display: grid;
+    align-items: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-size: 1em;
+    text-align: left;
+}
+
+input,
+select {
+    block-size: 2em;
+    max-inline-size: fit-content;
+    font-size: 1em;
+    border: 1px solid var(--maindarkcolor);
+    accent-color: var(--accentDark);
+
+}
+
+input,
+fieldset,
+select {
+    border-radius: 3px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    align-content: left;
+}
+
+input[type=radio],
+input[type=checkbox],
+input label {
+    vertical-align: middle;
+}
+
+input[type=submit] {
+    grid-column: 2;
+}
+
+input[type=reset] {
+    margin-inline-start: 10px;
+
+}
+
+input:not([type=radio][type=checkbox]),
+fieldset,
+select {
+    margin-block-end: 15px;
+}
+
+legend {
+    text-align: left;
+    font-size: 1.25em;
+}
+
+fieldset {
+    text-align: left;
+    border: 3px solid var(--maindarkcolor);
+    border-radius: 5px;
+}
+
+#actions {
+    text-align: left;
+}
+
+@media(min-width:768px) {
+    form {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        row-gap: 15px;
+        column-gap: 5px;
+    }
+
+    label {
+        justify-self: end;
+        ;
+    }
+
+
+    fieldset,
+    div[id=actions] {
+        grid-column: 2;
+    }
+
+    input:not([type=radio][type=checkbox]),
+    fieldset {
+        margin-block-end: 0px;
+    }
+}
